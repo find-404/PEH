@@ -1,0 +1,7 @@
+Package: main
+Version: 1.0-1
+Architecture: all
+Depends: libc6 (>= 2.7)
+Maintainer: Your Name <youremail@example.com>
+Description: Hello World program in C
+ A simple Hello World program in C.
