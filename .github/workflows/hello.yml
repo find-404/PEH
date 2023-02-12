@@ -26,13 +26,12 @@ jobs:
         
     - name: Build WineHQ 8.1 (i386)
       run: |
-        ./configure
         make
         sudo make install
         
     - name: Package WineHQ 8.1 (i386)
       run: |
-        debuild -us -uc
+        sudo dpkg-deb --build Hello
         
     - name: Deploy to production (i386)
       if: success()
