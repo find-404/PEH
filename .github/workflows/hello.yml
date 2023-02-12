@@ -31,7 +31,7 @@ jobs:
         
     - name: Package WineHQ 8.1 (i386)
       run: |
-        sudo dpkg-deb --build Hello
+        sudo dpkg-deb --build main
         
     - name: Deploy to production (i386)
       if: success()
