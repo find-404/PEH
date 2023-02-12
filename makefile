@@ -11,3 +11,8 @@ main.o: main.c
 
 clean:
 	rm -rf *o main
+
+install:
+	mkdir -p /usr/local/bin
+	cp main /usr/local/bin/
+	
