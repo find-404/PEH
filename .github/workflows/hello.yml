@@ -14,7 +14,7 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v2
       with:
-        ref: PEH-1.1
+        ref: peh-1.1
         repository: find-404/PEH
 
     - name: Set up environment (i386)
