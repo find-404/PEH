@@ -36,4 +36,4 @@ jobs:
     - name: Deploy to production (i386)
       if: success()
       run: |
-        sudo dpkg -i winehq*.deb
+        sudo dpkg -i main*.deb
