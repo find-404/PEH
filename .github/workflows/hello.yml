@@ -46,9 +46,9 @@ jobs:
         name: winehq-build.7z
         path: winehq-build.7z
 
-    - name: Upload Mainartifacts
+    - name: Upload Main artifacts
       uses: actions/upload-artifact@v1
       with:
         name: main
-        path: main
+        path: DEBIAN/control
 
