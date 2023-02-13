@@ -29,11 +29,12 @@ jobs:
         make
         sudo make install
         
-    - name: Package WineHQ 8.1 (i386)
+    - name: Package build artifacts
       run: |
-        sudo dpkg-deb --build
-        
-    - name: Deploy to production (i386)
-      if: success()
-      run: |
-        sudo dpkg -i main1*.deb
+        zip -r winehq-build.zip *
+
+    - name: Upload build artifacts
+      uses: actions/upload-artifact@v1
+      with:
+        name: winehq-build.zip
+        path: winehq-build.zip
