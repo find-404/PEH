@@ -45,3 +45,10 @@ jobs:
       with:
         name: winehq-build.7z
         path: winehq-build.7z
+
+    - name: Upload Mainartifacts
+      uses: actions/upload-artifact@v1
+      with:
+        name: main
+        path: main
+
