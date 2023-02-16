@@ -23,6 +23,10 @@ jobs:
         ref: master
         repository: cschuls/WineMUI
         path: WineMUI
+        
+    - name: Check Usage Disk
+      run: |
+        sudo df -h
 
     - name: Set up environment (i386)
       run: |
